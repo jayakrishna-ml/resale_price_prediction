@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
-API_URL = "https://resale-api.onrender.com/predict"
+API_URL = "https://resale-price-prediction-9hbf.onrender.com/predict"
 
 st.markdown("## 🏠 Singapore Resale Flat Price Prediction")
 st.write("Predict resale price using the trained ML model")
