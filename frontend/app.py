@@ -13,7 +13,12 @@ API_URL = "https://resale-price-prediction-9hbf.onrender.com/predict"
 st.markdown("## 🏠 Singapore Resale Flat Price Prediction")
 st.write("Predict resale price using the trained ML model")
 
-uniques=joblib.load("unique_values.pkl")
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+uniques_path = os.path.join(BASE_DIR, "unique_values.pkl")
+
+uniques = joblib.load(uniques_path)
 
 st.subheader("Flat Details")
 
